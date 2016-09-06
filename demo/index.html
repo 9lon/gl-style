@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>gl-style demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+
+    <link rel="import" href="../gl-color.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles gl-color">
+        .title {
+            font-size: 20px
+        }
+        
+        .primary {
+            color: var(--gl-primary-color);
+        }
+        
+        .success {
+            color: var(--gl-success-color);
+        }
+        
+        .info {
+            color: var(--gl-info-color);
+        }
+        
+        .warning {
+            color: var(--gl-warning-color);
+        }
+        
+        .danger {
+            color: var(--gl-danger-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="vertical-section-container centered">
+        <h3>Basic gl-color Demo</h3>
+        <demo-snippet>
+            <div class="title">gl-style css color for webcomponents</div><br>
+            <div class="primary">primary color</div>--gl-primary-color <br><br>
+            <div class="success">success color</div>--gl-success-color<br><br>
+            <div class="info">info color</div>--gl-info-color<br><br>
+            <div class="warning">warning color</div>--gl-warning-color<br><br>
+            <div class="danger">danger color</div>--gl-danger-color
+            <br>
+            <code>
+            
+            
+            
+            
+            
+        </code>
+        </demo-snippet>
+    </div>
+
+</body>
+
+</html>
