@@ -19,4 +19,26 @@ $ bower install 9lon-gl-style --save
         color:var(--gl-primary-color);
     }
 ```
+## Color variables
+![alt text](http://i.imgur.com/DTyUDJv.png "gl-color")
+```
+        --gl-primary-color
+        --gl-success-color
+        --gl-info-color
+        --gl-warning-color
+        --gl-danger-color
 
+        --gl-gray-darker-color
+        --gl-gray-dark-color
+        --gl-gray-color
+        --gl-gray-light-color
+        --gl-gray-lighter-color
+
+        --gl-white-color
+
+        --gl-primary-font-color
+        --gl-success-font-color
+        --gl-info-font-color
+        --gl-warning-font-color
+        --gl-danger-font-color
+```

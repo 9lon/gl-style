@@ -4,28 +4,40 @@
 `gl-color`
 gl-color for web components
 
-@demo demo/index.html 
+@demo demo/index.html
 -->
 
 <dom-module id="gl-color">
     <template>
     <style>
       :root{
+        /*patten form bootstap*/
         --gl-primary-color: #337ab7;
         --gl-success-color: #5cb85c;
         --gl-info-color: #5bc0de;
         --gl-warning-color: #f0ad4e;
         --gl-danger-color: #d9534f;
+
+        --gl-gray-darker-color:#222;
+        --gl-gray-dark-color:#333;
+        --gl-gray-color:#555;
+        --gl-gray-light-color:#777;
+        --gl-gray-lighter-color:#eee;
+
+        --gl-white-color:#FFFFFF;
+
+        --gl-primary-font-color: #2E2EFE;
+        --gl-success-font-color: #008000;
+        --gl-info-font-color: #1E90FF;
+        --gl-warning-font-color: #FAAC58;
+        --gl-danger-font-color: 	#FF0000;
       }
     </style>
   </template>
 
     <script>
         Polymer({
-
             is: 'gl-color',
-
-
         });
     </script>
 </dom-module>
