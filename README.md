@@ -9,6 +9,10 @@ $ bower install 9lon-gl-style --save
 ```
 
 ## วิธีการใช้งาน
+import ไฟล์ในหน้าที่่ต้องการใช้
+```
+ <link rel="import" href="bower_components/gl-styles/gl-color.html">
+```
 ให้คุณแทรก gl-color ใน แทรก style ในหน้าที่คุณต้องใช้งาน
 ```
 <style is="custom-style" include="gl-color"></style>
