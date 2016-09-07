@@ -1,0 +1,57 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`gl-color`
+gl-color for web components
+
+@demo demo/index.html
+-->
+
+<dom-module id="gl-size">
+    <template>
+    <style>
+      :root {
+       --gl-font-family: {
+         font-family: 'tahoma', sans-serif;
+         -webkit-font-smoothing: antialiased;
+        }
+      }
+      .gl-ex-large {
+        font-size: 28px;
+        padding: 14px 16px 14px 16px;
+        margin: 1px;
+        @apply --gl-font-family; 
+      }
+      .gl-large {
+        font-size: 24px;
+        padding: 10px 16px 10px 16px;
+        margin: 1px;  
+        @apply --gl-font-family; 
+      }
+      .gl-default {
+        font-size: 20px;
+        padding: 6px 12px 6px 12px;
+        margin: 1px;  
+        @apply --gl-font-family; 
+      }
+      .gl-small {
+        font-size: 18px;
+        padding: 5px 10px 5px 10px;
+        margin: 1px; 
+        @apply --gl-font-family; 
+      }
+      .gl-ex-small {
+        font-size: 18px;
+        padding: 1px 8px 1px 8px;
+        margin: 1px; 
+        @apply --gl-font-family; 
+      }
+    </style>
+  </template>
+
+    <script>
+        Polymer({
+            is: 'gl-size',
+        });
+    </script>
+</dom-module>

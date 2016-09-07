@@ -11,8 +11,8 @@
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
 
     <link rel="import" href="../gl-color.html">
-
-    <style is="custom-style" include="demo-pages-shared-styles gl-color">
+    <link rel="import" href="../gl-size.html">
+    <style is="custom-style" include="demo-pages-shared-styles gl-color gl-size">
         .title {
             font-size: 20px
         }
@@ -51,13 +51,15 @@
             <div class="warning">warning color</div>--gl-warning-color<br><br>
             <div class="danger">danger color</div>--gl-danger-color
             <br>
-            <code>
-            
-            
-            
-            
-            
-        </code>
+            <br>class : ex-large<br>
+            <button class="gl-ex-large">gl-ex-large</button> <br><br>class : large<br>
+            <button class="gl-large">gl-large</button><br><br>class : default<br>
+            <button class="gl-default">gl-default</button><br><br>class : small<br>
+            <button class="gl-small">gl-small</button><br><br>class : ex-small<br>
+            <button class="gl-ex-small">gl-ex-small</button><br>
+            <br>
+            <input type="text" class="danger gl-default" value="ทดสอบ"><br>
+            <input type="text" class=" ex-large gl-default" value="ทดสอบ"><br>
         </demo-snippet>
     </div>
 

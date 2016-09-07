@@ -8,7 +8,7 @@ gl-style for web components
 $ bower install 9lon-gl-styles --save
 ```
 
-## วิธีการใช้งาน
+## วิธีการใช้งาน gl-color
 import ไฟล์ gl-color ในหน้าที่่ต้องการใช้
 ```
  <link rel="import" href="bower_components/gl-styles/gl-color.html">
@@ -23,6 +23,7 @@ import ไฟล์ gl-color ในหน้าที่่ต้องการ
         color:var(--gl-primary-color);
     }
 ```
+
 ## Color variables
 ![alt text](http://i.imgur.com/DTyUDJv.png "gl-color")
 ```
@@ -45,4 +46,26 @@ import ไฟล์ gl-color ในหน้าที่่ต้องการ
         --gl-info-font-color
         --gl-warning-font-color
         --gl-danger-font-color
+```
+## วิธีการใช้งาน gl-size
+import ไฟล์ gl-size ในหน้าที่่ต้องการใช้
+```
+ <link rel="import" href="bower_components/gl-styles/gl-size.html">
+```
+ให้คุณแทรก gl-color ใน แทรก style ในหน้าที่คุณต้องใช้งาน
+```
+<style is="custom-style" include="gl-size"></style>
+```
+ต่อมาก็แทรก css ดังตัวอย่างด้านล่างลงไปใน สไตล์ที่คุณต้องการจะเปลี่ยน 
+```
+    <button class="ex-small">ex-small</button>
+```
+## Size class
+![alt text](http://i.imgur.com/00Ah52X.png "gl-color")
+```
+        .gl-ex-large
+        .gl-large
+        .gl-default
+        .gl-small
+        .gl-ex-small
 ```
