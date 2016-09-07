@@ -1,8 +1,8 @@
 {
-    "name": "gl-style",
+    "name": "gl-styles",
     "description": "gl-style for web components",
     "version": "0.0.1",
-    "main": "gl-style.html",
+    "main": "gl-color.html",
     "dependencies": {
         "polymer": "Polymer/polymer#^1.4.0"
     },
