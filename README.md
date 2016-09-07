@@ -47,6 +47,20 @@ import ไฟล์ gl-color ในหน้าที่่ต้องการ
         --gl-warning-font-color
         --gl-danger-font-color
 ```
+## BG-Color variables
+![alt text](http://i.imgur.com/s3gHS4Q.png "gl-bg-color")
+```
+        .gl-bg-primary
+        .gl-bg-success
+        .gl-bg-info
+        .gl-bg-warning
+        .gl-bg-danger
+```
+วิธีการใช้งาน
+```
+    <p class="gl-bg-primary">gl-bg-primary</p>
+```
+
 ## วิธีการใช้งาน gl-size
 import ไฟล์ gl-size ในหน้าที่่ต้องการใช้
 ```
@@ -60,7 +74,7 @@ import ไฟล์ gl-size ในหน้าที่่ต้องการ�
 ```
     <button class="ex-small">ex-small</button>
 ```
-## Size class
+## Size class 
 ![alt text](http://i.imgur.com/00Ah52X.png "gl-color")
 ```
         .gl-ex-large
@@ -68,4 +82,23 @@ import ไฟล์ gl-size ในหน้าที่่ต้องการ�
         .gl-default
         .gl-small
         .gl-ex-small
+
 ```
+## วิธีการใช้งาน  font size variables 
+```
+        font-size: var(--font-size-large);
+```
+##  Font size variables 
+```
+       --font-size-default:        14px;
+       --font-size-large:         ~18px
+       --font-size-small:         ~12px
+       --font-size-h1:            ~36px
+       --font-size-h2:            ~30px
+       --font-size-h3:            ~24px
+       --font-size-h4:            ~18px
+       --font-size-h5:             14px;
+       --font-size-h6:            ~12px
+```
+
+

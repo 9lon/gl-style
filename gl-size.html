@@ -11,39 +11,54 @@ gl-color for web components
     <template>
     <style>
       :root {
+       --font-size-default:          14px;
+       --font-size-large:         calc(var(--font-size-default) * 1.25);/*// ~18px*/
+       --font-size-small:         calc(var(--font-size-default) * 0.85); /*// ~12px*/
+       
+
+       --font-size-h1:            calc(var(--font-size-default) * 2.6);  /*// ~36px*/
+       --font-size-h2:            calc(var(--font-size-default) * 2.15); /*// ~30px*/
+       --font-size-h3:            calc(var(--font-size-default) * 1.7); /*// ~24px*/
+       --font-size-h4:            calc(var(--font-size-default) * 1.25); /*// ~18px*/
+       --font-size-h5:            var(--font-size-default);
+       --font-size-h6:            calc(var(--font-size-default) * 0.85);  /*// ~12px*/
+      
        --gl-font-family: {
          font-family: 'tahoma', sans-serif;
          -webkit-font-smoothing: antialiased;
         }
+        --gl-margin: {
+            margin: 1px;
+        }
       }
       .gl-ex-large {
-        font-size: 28px;
+        font-size: calc(var(--font-size-default) * 2);
         padding: 14px 16px 14px 16px;
-        margin: 1px;
-        @apply --gl-font-family; 
+        margin: var(--gl-margin);
+         @apply --gl-font-family; 
       }
       .gl-large {
-        font-size: 24px;
+        font-size: var(--font-size-h3);
         padding: 10px 16px 10px 16px;
-        margin: 1px;  
+        margin: var(--gl-margin);  
         @apply --gl-font-family; 
       }
       .gl-default {
-        font-size: 20px;
+        font-size: var(--font-size-large);
         padding: 6px 12px 6px 12px;
-        margin: 1px;  
+        margin: var(--gl-margin);  
         @apply --gl-font-family; 
       }
       .gl-small {
-        font-size: 18px;
+        font-size: var(--font-size-large);
         padding: 5px 10px 5px 10px;
-        margin: 1px; 
+        margin: var(--gl-margin); 
         @apply --gl-font-family; 
       }
       .gl-ex-small {
-        font-size: 18px;
+        font-size: var(--font-size-large);
         padding: 1px 8px 1px 8px;
-        margin: 1px; 
+        margin: var(--gl-margin);
         @apply --gl-font-family; 
       }
     </style>
