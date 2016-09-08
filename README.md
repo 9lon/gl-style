@@ -64,7 +64,7 @@ import ไฟล์ gl-color ในหน้าที่่ต้องการ
 ## วิธีการใช้งาน gl-size
 import ไฟล์ gl-size ในหน้าที่่ต้องการใช้
 ```
- <link rel="import" href="bower_components/gl-styles/gl-size.html">
+ <link rel="import" href="bower_components/gl-style/gl-size.html">
 ```
 ให้คุณแทรก gl-size ใน แทรก style ในหน้าที่คุณต้องใช้งาน
 ```
