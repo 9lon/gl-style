@@ -14,27 +14,32 @@
     <link rel="import" href="../gl-size.html">
     <style is="custom-style" include="demo-pages-shared-styles gl-color gl-size">
         .title {
-            font-size: 20px
+            font-size: var(--font-size-large);
         }
         
         .primary {
             color: var(--gl-primary-color);
+            font-size: var(--font-size-h1);
         }
         
         .success {
             color: var(--gl-success-color);
+            font-size: var(--font-size-h2);
         }
         
         .info {
             color: var(--gl-info-color);
+            font-size: var(--font-size-h3);
         }
         
         .warning {
             color: var(--gl-warning-color);
+            font-size: var(--font-size-h4);
         }
         
         .danger {
             color: var(--gl-danger-font-color);
+            font-size: var(--font-size-h5);
         }
     </style>
 </head>
@@ -65,6 +70,9 @@
             <p class="gl-bg-success">gl-bg-success</p>
             <p class="gl-bg-info">gl-bg-info</p>
             <p class="gl-bg-warning">gl-bg-warning</p>
+            <p class="gl-bg-danger">gl-bg-danger</p>
+
+            Font size
             <p class="gl-bg-danger">gl-bg-danger</p>
         </demo-snippet>
     </div>
