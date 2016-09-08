@@ -5,7 +5,7 @@ gl-style for web components
 ## วิธีการใช้งานติดตั้ง
 
 ```
-$ bower install 9lon-gl-styles --save
+$ bower install 9lon-gl-style --save
 ```
 
 ## วิธีการใช้งาน gl-color
