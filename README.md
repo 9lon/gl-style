@@ -90,15 +90,15 @@ import ไฟล์ gl-size ในหน้าที่่ต้องการ�
 ```
 ##  Font size variables 
 ```
-       --font-size-default:        14px;
-       --font-size-large:         ~18px
-       --font-size-small:         ~12px
-       --font-size-h1:            ~36px
-       --font-size-h2:            ~30px
-       --font-size-h3:            ~24px
-       --font-size-h4:            ~18px
-       --font-size-h5:             14px;
-       --font-size-h6:            ~12px
+       --font-size-default:        16px;
+       --font-size-large:         ~20px
+       --font-size-small:         ~14px
+       --font-size-h1:            ~42px
+       --font-size-h2:            ~34px
+       --font-size-h3:            ~27px
+       --font-size-h4:            ~20px
+       --font-size-h5:             16px;
+       --font-size-h6:            ~14px
 ```
 
 
