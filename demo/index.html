@@ -10,10 +10,12 @@
     <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
 
+    <link rel="import" href="../../paper-button/paper-button.html">
+
     <link rel="import" href="../gl-color.html">
     <link rel="import" href="../gl-size.html">
     <style is="custom-style" include="demo-pages-shared-styles gl-color gl-size">
-        .title {
+            .title {
             font-size: var(--font-size-large);
         }
         
@@ -41,6 +43,9 @@
             color: var(--gl-danger-font-color);
             font-size: var(--font-size-h5);
         }
+        
+        .btn {
+            background-color: var(--gl-primary-color);
     </style>
 </head>
 
@@ -72,6 +77,13 @@
             <p class="gl-bg-warning">gl-bg-warning</p>
             <p class="gl-bg-danger">gl-bg-danger</p>
 
+            <br>Button : Btn style<br>
+
+            <paper-button raised class="gl-btn-primary">สำคัญ</paper-button><br><br>
+            <paper-button raised class="gl-btn-success">success</paper-button><br><br>
+            <paper-button raised class="gl-btn-info">info</paper-button><br><br>
+            <paper-button raised class="gl-btn-warning">warning</paper-button><br><br>
+            <paper-button raised class="gl-btn-danger">danger</paper-button>
         </demo-snippet>
     </div>
 
