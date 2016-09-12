@@ -60,8 +60,8 @@ import ไฟล์ gl-color ในหน้าที่่ต้องการ
 ```
     <p class="gl-bg-primary">gl-bg-primary</p>
 ```
-## Btn style
-![alt text](http://i.imgur.com/SIU2EMM.png "gl-color")
+## Btn style and icon size
+![alt text](http://i.imgur.com/CKClG9G.png "gl-color")
 ```
         .gl-btn-primary
         .gl-btn-success
@@ -69,10 +69,14 @@ import ไฟล์ gl-color ในหน้าที่่ต้องการ
         .gl-btn-warning 
         .gl-btn-danger 
 
+        .gl-icon-size
+
 ```
 ## วิธีการใช้งาน  Btn style กับ  paper-button
 ```
-       <paper-button raised class="gl-btn-primary">primary</paper-button>
+       <paper-button raised class="gl-btn-warning">
+                <iron-icon icon="favorite" class="gl-icon-size"></iron-icon>warning
+       </paper-button>
 ```
 
 ## วิธีการใช้งาน gl-size
