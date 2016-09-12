@@ -60,6 +60,20 @@ import ไฟล์ gl-color ในหน้าที่่ต้องการ
 ```
     <p class="gl-bg-primary">gl-bg-primary</p>
 ```
+## Btn style
+![alt text](http://i.imgur.com/SIU2EMM.png "gl-color")
+```
+        .gl-btn-primary
+        .gl-btn-success
+        .gl-btn-info
+        .gl-btn-warning 
+        .gl-btn-danger 
+
+```
+## วิธีการใช้งาน  Btn style กับ  paper-button
+```
+       <paper-button raised class="gl-btn-primary">primary</paper-button>
+```
 
 ## วิธีการใช้งาน gl-size
 import ไฟล์ gl-size ในหน้าที่่ต้องการใช้
@@ -100,5 +114,6 @@ import ไฟล์ gl-size ในหน้าที่่ต้องการ�
        --font-size-h5:             16px;
        --font-size-h6:            ~14px
 ```
+
 
 
