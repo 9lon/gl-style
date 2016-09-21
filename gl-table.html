@@ -1,0 +1,35 @@
+
+<link rel="import" href="../polymer/polymer.html">
+
+<dom-module id="gl-table">
+    <template>
+        <style>
+           table.gl-table-default{
+               border-collapse: collapse;
+               width: 100%;
+               overflow-x:auto;
+           }
+           table.gl-table-default,th,td{
+               border-bottom: 1px solid #ddd;
+           }
+           th,td{
+               padding: 15px;
+           }
+           th{
+              text-align: left;
+              background-color: #F1F1F1;
+           }
+           td{
+               text-align: left;
+           }
+           tr:hover{
+               background-color: #F1F1F1;
+           }
+        </style>
+    </template>
+    <script>
+        Polymer({
+            is: 'gl-table'
+        });
+    </script>
+</dom-module>

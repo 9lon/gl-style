@@ -14,7 +14,9 @@
     <link rel="import" href="../../iron-icons/iron-icons.html">
     <link rel="import" href="../gl-color.html">
     <link rel="import" href="../gl-size.html">
-    <style is="custom-style" include="demo-pages-shared-styles gl-color gl-size">
+    <link rel="import" href="../gl-table.html">
+    
+    <style is="custom-style" include="demo-pages-shared-styles gl-color gl-size gl-table">
             .title {
             font-size: var(--font-size-large);
         }
@@ -89,6 +91,52 @@
                 <iron-icon icon="favorite" class="gl-icon-size"></iron-icon>warning</paper-button><br><br>
             <paper-button raised class="gl-btn-danger">
                 <iron-icon icon="favorite" class="gl-icon-size"></iron-icon>danger</paper-button>
+            
+             <br><br><br>Table : Table style.<br><br><br>
+             class : gl-table-default
+            <div style="overflow-x:auto;">
+            <table class="gl-table-default">
+                <thead class="table-head">
+                    <tr>
+                        <th>No.</th>
+                        <th>FirstName.</th>
+                        <th>LastName.</th>
+                        <th>Gender.</th>
+                        <th>Tel.</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    <tr>
+                        <td>1</td>
+                        <td>fname1</td>
+                        <td>lname1</td>
+                        <td>m</td>
+                        <td>12345</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>fname2</td>
+                        <td>lname2</td>
+                        <td>m</td>
+                        <td>12345</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>fname3</td>
+                        <td>lname3</td>
+                        <td>f</td>
+                        <td>12345</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>fname4</td>
+                        <td>lname4</td>
+                        <td>f</td>
+                        <td>12345</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
         </demo-snippet>
     </div>
 
