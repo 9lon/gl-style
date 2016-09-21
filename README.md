@@ -119,5 +119,27 @@ import ไฟล์ gl-size ในหน้าที่่ต้องการ�
        --font-size-h6:            ~14px
 ```
 
+### วิธีใช้งาน gl-table
+import ไฟล์ gl-table ในหน้าที่่ต้องการ
+```
+<style is="custom-style" include="gl-table"></style>
+```
+![alt text](http://i.imgur.com/IZttsy2.png "gl-table-default")
 
+Example
+
+```
+<table class="gl-table-default">
+     <thead>
+         <tr>
+           content...
+         </tr>
+     </thead>
+     <tbody>
+         <tr>
+           content...
+         </tr>
+     </tbody>
+ </table>
+```
 
