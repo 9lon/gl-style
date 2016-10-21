@@ -4,25 +4,25 @@
 <dom-module id="gl-table">
     <template>
         <style>
-           table.gl-table-default{
+           .gl-table-default{
                border-collapse: collapse;
                width: 100%;
                overflow-x:auto;
            }
-           table.gl-table-default,th,td{
+           .gl-table-default,.gl-table-default > thead > tr > th,.gl-table-default > tbody > tr > td{
                border-bottom: 1px solid #ddd;
            }
-           th,td{
+           .gl-table-default > thead > tr > th,.gl-table-default > tbody > tr > td{
                padding: 15px;
            }
-           th{
+           .gl-table-default > thead > tr > th {
               text-align: left;
               background-color: #F1F1F1;
            }
-           td{
+           .gl-table-default > tbody > tr > td{
                text-align: left;
            }
-           tr:hover{
+           .gl-table-default > tbody > tr:hover{
                background-color: #F1F1F1;
            }
         </style>
