@@ -9,14 +9,19 @@
 
     <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
-
     <link rel="import" href="../../paper-button/paper-button.html">
+    <link rel="import" href="../../paper-toast/paper-toast.html">
+    <link rel="import" href="../../paper-spinner/paper-spinner.html">
     <link rel="import" href="../../iron-icons/iron-icons.html">
+    <link rel="import" href="../../gl-font/gl-rsu-font.html">
     <link rel="import" href="../gl-color.html">
     <link rel="import" href="../gl-size.html">
     <link rel="import" href="../gl-table.html">
+    <link rel="import" href="../gl-panel.html">
+    <link rel="import" href="../gl-toast.html">
     
-    <style is="custom-style" include="demo-pages-shared-styles gl-color gl-size gl-table">
+    
+    <style is="custom-style" include="demo-pages-shared-styles gl-color gl-size gl-table gl-panel gl-toast">
             .title {
             font-size: var(--font-size-large);
         }
@@ -137,6 +142,49 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
+
+            class : gl-panel-default
+            <div class="gl-panel-default">
+                <div class="gl-panel-default-header">
+                     Header
+                </div>
+                <div class="gl-panel-default-content">
+                    content
+                </div>
+            </div>
+
+            class : gl-toast-loading
+            <div>
+                <paper-button raised onclick="toast0.open()">Default toast</paper-button>
+                <paper-toast class="gl-toast-loading" id="toast0" positionTarget>
+                    <paper-spinner active></paper-spinner>
+                    <span>
+                        กำลังโหลด... 
+                    </span>
+                </paper-toast>     
+            </div>
+
+            class : gl-toast-loading
+            <div>
+                <paper-button raised onclick="toastDialog.open()">ToastDialog</paper-button>
+               <paper-toast class="gl-toast-dialog" id="toastDialog" duration="0">
+                    <span>ต้องการลบข้อมูลใช้หรือไม่ ? </span>
+                    <div>
+                        <paper-button class="gl-btn-success gl-small" onclick="toastDialog.toggle()" confirm>Yes</paper-button>
+                        <paper-button class="gl-bg-danger gl-small" onclick="toastDialog.toggle()">No</paper-button>
+                    </div>
+		        </paper-toast> 
+            </div>
+            class : gl-toast-success
+            <div>
+                <paper-button raised onclick="toastStatus.open()">ToastDialog</paper-button>
+                <paper-toast class ="gl-toast-success" id="toastStatus">
+                    <iron-icon icon ="done"></iron-icon>
+                    <span>
+                        เสร็จสิ้น..
+                    </span>
+		        </paper-toast>
             </div>
         </demo-snippet>
     </div>
