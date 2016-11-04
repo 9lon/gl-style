@@ -142,4 +142,23 @@ Example
      </tbody>
  </table>
 ```
+### วิธีใช้งาน gl-table
+import ไฟล์ gl-table ในหน้าที่่ต้องการ
+```
+<style is="custom-style" include="gl-panel"></style>
+```
+![alt text](http://i.imgur.com/JN7xA5R.png "gl-panel")
+
+Example
+
+```
+<div class="gl-panel-default">
+    <div class="gl-panel-default-header">
+        Header
+    </div>
+    <div class="gl-panel-default-content">
+        content
+    </div>
+</div>
+```
 
