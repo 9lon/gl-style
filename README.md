@@ -142,8 +142,8 @@ Example
      </tbody>
  </table>
 ```
-### วิธีใช้งาน gl-table
-import ไฟล์ gl-table ในหน้าที่่ต้องการ
+### วิธีใช้งาน gl-panel
+import ไฟล์ gl-panel ในหน้าที่่ต้องการ
 ```
 <style is="custom-style" include="gl-panel"></style>
 ```
