@@ -130,17 +130,17 @@ Example
 
 ```
 <table class="gl-table-default">
-     <thead>
-         <tr>
-           content...
-         </tr>
-     </thead>
-     <tbody>
-         <tr>
-           content...
-         </tr>
-     </tbody>
- </table>
+          <thead class="table-head">
+            <tr>
+              <th>1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+             <td>1</td>
+           </tr>
+         </tbody>
+      </table>
 ```
 ### วิธีใช้งาน gl-panel
 import ไฟล์ gl-panel ในหน้าที่่ต้องการ
