@@ -1,36 +1,15 @@
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../gl-font/gl-cschatthai-font.html">
+<link rel="import" href="gl-color.html">
+<dom-module id="gl-styles">
 <style is="custom-style">
     :root {
-        /*patten form bootstap*/
-        --gl-primary-color: #337ab7;
-        --gl-success-color: #5cb85c;
-        --gl-info-color: #5bc0de;
-        --gl-warning-color: #f0ad4e;
-        --gl-danger-color: #d9534f;
-        --gl-gray-darker-color: #222;
-        --gl-gray-dark-color: #333;
-        --gl-gray-color: #555;
-        --gl-gray-light-color: #777;
-        --gl-gray-lighter-color: #eee;
-        --gl-white-color: #FFFFFF;
-        --gl-primary-font-color: #2E2EFE;
-        --gl-success-font-color: #008000;
-        --gl-info-font-color: #1E90FF;
-        --gl-warning-font-color: #FAAC58;
-        --gl-danger-font-color: #FF0000;
-        --gl-padding: 15px;
-        --gl-padding-btn: 10px 15px 10px 15px;
-        --gl-btn-min-hight: 20px;
-        --gl-btn-min-width: 100px;
-        --gl-btn-margin: 5px 10px 5px 10px;
-        --gl-icon-hight: 20px;
-        --gl-icon-width: 20px;
-        
-        --font-size-default:          16px;
+
+
+        --font-size-default:          16em;
        --font-size-large:         calc(var(--font-size-default) * 1.25);/*// ~20px*/
        --font-size-small:         calc(var(--font-size-default) * 0.85); /*// ~14px*/
-       
+
 
        --font-size-h1:            calc(var(--font-size-default) * 2.6);  /*// ~42px*/
        --font-size-h2:            calc(var(--font-size-default) * 2.15); /*// ~34px*/
@@ -38,179 +17,145 @@
        --font-size-h4:            calc(var(--font-size-default) * 1.25); /*// ~20px*/
        --font-size-h5:            var(--font-size-default);               /*// ~16px*/
        --font-size-h6:            var(--font-size-small);                /*// ~14px*/
-      
+
        --gl-font-family: {
          font-family: 'CSChatThaiUI','tahoma', sans-serif;
          -webkit-font-smoothing: antialiased;
         }
         --gl-margin: {
-            margin: 1px;
+            margin: 0.063em;
         }
-        
+
     }
     /*bg*/
-    
     .gl-bg-primary {
-        background-color: var(--gl-primary-color);
-        color: var(--gl-white-color);
-        padding: var(--gl-padding);
+      background-color: var(--gl-primary-color);
+      color: var(--gl-white-color);
+      padding: var(--gl-padding);
     }
-    
     .gl-bg-success {
-        background-color: var(--gl-success-color);
-        color: var(--gl-white-color);
-        padding: var(--gl-padding);
+      background-color: var(--gl-success-color);
+      color: var(--gl-white-color);
+      padding: var(--gl-padding);
     }
-    
     .gl-bg-info {
-        background-color: var(--gl-info-color);
-        color: var(--gl-white-color);
-        padding: var(--gl-padding);
+      background-color: var(--gl-info-color);
+      color: var(--gl-white-color);
+      padding: var(--gl-padding);
     }
-    
     .gl-bg-warning {
-        background-color: var(--gl-warning-color);
-        color: var(--gl-white-color);
-        padding: var(--gl-padding);
+      background-color: var(--gl-warning-color);
+      color: var(--gl-white-color);
+      padding: var(--gl-padding);
     }
-    
     .gl-bg-danger {
-        background-color: var(--gl-danger-color);
-        color: var(--gl-white-color);
-        padding: var(--gl-padding);
+      background-color: var(--gl-danger-color);
+      color: var(--gl-white-color);
+      padding: var(--gl-padding);
     }
-    /*end bg */
+     /*end bg */
     /*btn*/
-    
-    .gl-btn-primary {
-        background-color: var(--gl-primary-color);
-        color: var(--gl-white-color);
-        min-height: var(--gl-btn-min-hight);
-        min-width: var(--gl-btn-min-width);
-        margin: var(--gl-btn-margin);
+     .gl-btn-primary {
+      background-color: var(--gl-primary-color);
+      color: var(--gl-white-color);
+      min-height:var(--gl-btn-min-hight);
+      min-width:var(--gl-btn-min-width);
+      margin: var(--gl-btn-margin);
     }
-    
     .gl-btn-success {
-        background-color: var(--gl-success-color);
-        color: var(--gl-white-color);
-        min-height: var(--gl-btn-min-hight);
-        min-width: var(--gl-btn-min-width);
-        margin: var(--gl-btn-margin);
+      background-color: var(--gl-success-color);
+      color: var(--gl-white-color);
+      min-height:var(--gl-btn-min-hight);
+      min-width:var(--gl-btn-min-width);
+      margin: var(--gl-btn-margin);
     }
-    
     .gl-btn-info {
-        background-color: var(--gl-info-color);
-        color: var(--gl-white-color);
-        min-height: var(--gl-btn-min-hight);
-        min-width: var(--gl-btn-min-width);
-        margin: var(--gl-btn-margin);
+      background-color: var(--gl-info-color);
+      color: var(--gl-white-color);
+      min-height:var(--gl-btn-min-hight);
+      min-width:var(--gl-btn-min-width);
+      margin: var(--gl-btn-margin);
     }
-    
     .gl-btn-warning {
-        background-color: var(--gl-warning-color);
-        color: var(--gl-white-color);
-        min-height: var(--gl-btn-min-hight);
-        min-width: var(--gl-btn-min-width);
-        margin: var(--gl-btn-margin);
+      background-color: var(--gl-warning-color);
+      color: var(--gl-white-color);
+      min-height:var(--gl-btn-min-hight);
+      min-width:var(--gl-btn-min-width);
+      margin: var(--gl-btn-margin);
     }
-    
     .gl-btn-danger {
-        background-color: var(--gl-danger-color);
-        color: var(--gl-white-color);
-        min-height: var(--gl-btn-min-hight);
-        min-width: var(--gl-btn-min-width);
-        margin: var(--gl-btn-margin);
+      background-color: var(--gl-danger-color);
+      color: var(--gl-white-color);
+      min-height:var(--gl-btn-min-hight);
+      min-width:var(--gl-btn-min-width);
+      margin: var(--gl-btn-margin);
     }
-    /*end btn*/
-    
+     /*end btn*/
     .gl-icon-size {
-        height: var(--gl-icon-hight);
-        width: var(--gl-icon-width);
-        padding-right: 5px;
-    }
-    /*font size*/
-    .gl-ex-large {
-        font-size: calc(var(--font-size-default) * 2);
-        padding: 14px 16px 14px 16px;
-        margin: var(--gl-margin);
-         @apply --gl-font-family; 
-      }
-      .gl-large {
-        font-size: var(--font-size-h3);
-        padding: 10px 16px 10px 16px;
-        margin: var(--gl-margin);  
-        @apply --gl-font-family; 
-      }
-      .gl-default {
-        font-size: var(--font-size-large);
-        padding: 6px 12px 6px 12px;
-        margin: var(--gl-margin);  
-        @apply --gl-font-family; 
-      }
-      .gl-small {
-        font-size: var(--font-size-large);
-        padding: 5px 10px 5px 10px;
-        margin: var(--gl-margin); 
-        @apply --gl-font-family; 
-      }
-      .gl-ex-small {
-        font-size: var(--font-size-large);
-        padding: 1px 8px 1px 8px;
-        margin: var(--gl-margin);
-        @apply --gl-font-family; 
-      }
-       /*end font size*/
-    
+      height:var(--gl-icon-hight);
+      width:var(--gl-icon-width);
+      padding-right: 0.313em;
+     }
     /*table */
-    
+
     table.gl-table-default {
         border-collapse: collapse;
         width: 100%;
         overflow-x: auto;
     }
-    
+
     table.gl-table-default,
     table.gl-table-default > thead > tr > th,
     table.gl-table-default > tbody > tr > td,
     table.gl-table-default > tfoot > tr > td  {
-        border-bottom: 1px solid #ddd;
+        border-bottom: 0.063em solid #ddd;
     }
-    
+
     table.gl-table-default > thead > tr > th,
     table.gl-table-default > tbody > tr > td,
     table.gl-table-default > tfoot > tr > td  {
-        padding: 15px;
+        padding: 0.938em;
     }
-    
+
     table.gl-table-default > thead > tr > th {
         text-align: left;
         background-color: #F1F1F1;
     }
-    
+
     table.gl-table-default > tbody > tr > td {
         text-align: left;
     }
-    
+
     table.gl-table-default > tbody > tr:hover {
         background-color: #F1F1F1;
     }
     /*end table */
     /* gl-panel */
-    
+
     div.gl-panel-default {
-        border: 1px solid #ddd;
+        border: 0.063em solid #ddd;
     }
-    
+
     div.gl-panel-default > div.gl-panel-default-header {
         background-color: orange;
-        padding: 8px 10px 8px 10px;
+        padding: 0.500em 0.625em 0.500em 0.625em;
         color: white;
-        font-size: 18px;
+        font-size: 1.125em;
         text-align: left;
     }
-    
+
     div.gl-panel-default > div.gl-panel-default-content {
-        padding: 20px;
+        padding: 1.250em;
     }
     /*end gl-panel */
 </style>
+  <template>
+
+  </template>
+  <script>
+    Polymer({
+      is: "gl-styles",
+
+    });
+  </script>
+</dom-module>
