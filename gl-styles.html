@@ -6,7 +6,7 @@
     :root {
 
 
-        --font-size-default:          1em;
+        --font-size-default:          16px;
        --font-size-large:         calc(var(--font-size-default) * 1.25);/*// ~20px*/
        --font-size-small:         calc(var(--font-size-default) * 0.85); /*// ~14px*/
 
@@ -23,7 +23,7 @@
          -webkit-font-smoothing: antialiased;
         }
         --gl-margin: {
-            margin: 0.063em;
+            margin: 1px;
         }
 
     }
@@ -55,6 +55,13 @@
     }
      /*end bg */
     /*btn*/
+    .gl-btn-defalse {
+      background-color: var(--gl-white-color);
+      color: black;
+      min-height:var(--gl-btn-min-hight);
+      min-width:var(--gl-btn-min-width);
+      margin: var(--gl-btn-margin);
+    }
      .gl-btn-primary {
       background-color: var(--gl-primary-color);
       color: var(--gl-white-color);
@@ -94,7 +101,7 @@
     .gl-icon-size {
       height:var(--gl-icon-hight);
       width:var(--gl-icon-width);
-      padding-right: 0.313em;
+      padding-right: 5px;
      }
     /*table */
 
@@ -108,13 +115,13 @@
     table.gl-table-default > thead > tr > th,
     table.gl-table-default > tbody > tr > td,
     table.gl-table-default > tfoot > tr > td  {
-        border-bottom: 0.063em solid #ddd;
+        border-bottom: 1px solid #ddd;
     }
 
     table.gl-table-default > thead > tr > th,
     table.gl-table-default > tbody > tr > td,
     table.gl-table-default > tfoot > tr > td  {
-        padding: 0.938em;
+        padding: 15px;
     }
 
     table.gl-table-default > thead > tr > th {
@@ -133,19 +140,19 @@
     /* gl-panel */
 
     div.gl-panel-default {
-        border: 0.063em solid #ddd;
+        border: 1px solid #ddd;
     }
 
     div.gl-panel-default > div.gl-panel-default-header {
         background-color: orange;
-        padding: 0.500em 0.625em 0.500em 0.625em;
+        padding: 8px 10px 8px 10px;
         color: white;
-        font-size: 1.125em;
+        font-size: 18px;
         text-align: left;
     }
 
     div.gl-panel-default > div.gl-panel-default-content {
-        padding: 1.250em;
+        padding: 20px;
     }
     /*end gl-panel */
 </style>
