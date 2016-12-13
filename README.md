@@ -7,15 +7,15 @@ gl-style for web components
 ```
 $ bower install 9lon-gl-styles --save
 ```
-
+import ไฟล์ gl-styles ในหน้าที่่ต้องการใช้
+```
+ <link rel="import" href="bower_components/gl-styles/gl-styles.html">
+```
+ให้คุณแทรก gl-styles ใน แทรก style ในหน้าที่คุณต้องใช้งาน
+```
+<style is="custom-style" include="gl-styles"></style>
 ## วิธีการใช้งาน gl-color
-import ไฟล์ gl-color ในหน้าที่่ต้องการใช้
-```
- <link rel="import" href="bower_components/gl-styles/gl-color.html">
-```
-ให้คุณแทรก gl-color ใน แทรก style ในหน้าที่คุณต้องใช้งาน
-```
-<style is="custom-style" include="gl-color"></style>
+
 ```
 ต่อมาก็แทรก css ดังตัวอย่างด้านล่างลงไปใน สไตล์ที่คุณต้องการจะเปลี่ยน 
 ```
@@ -80,15 +80,7 @@ import ไฟล์ gl-color ในหน้าที่่ต้องการ
 ```
 
 ## วิธีการใช้งาน gl-size
-import ไฟล์ gl-size ในหน้าที่่ต้องการใช้
-```
- <link rel="import" href="bower_components/gl-styles/gl-size.html">
-```
-ให้คุณแทรก gl-size ใน แทรก style ในหน้าที่คุณต้องใช้งาน
-```
-<style is="custom-style" include="gl-size"></style>
-```
-ต่อมาก็แทรก css ดังตัวอย่างด้านล่างลงไปใน สไตล์ที่คุณต้องการจะเปลี่ยน 
+
 ```
     <button class="ex-small">ex-small</button>
 ```
@@ -103,9 +95,7 @@ import ไฟล์ gl-size ในหน้าที่่ต้องการ�
 
 ```
 ## วิธีการใช้งาน  font size variables 
-```
-        font-size: var(--font-size-large);
-```
+
 ##  Font size variables 
 ```
        --font-size-default:        16px;
@@ -120,10 +110,7 @@ import ไฟล์ gl-size ในหน้าที่่ต้องการ�
 ```
 
 ### วิธีใช้งาน gl-table
-import ไฟล์ gl-table ในหน้าที่่ต้องการ
-```
-<style is="custom-style" include="gl-table"></style>
-```
+
 ![alt text](http://i.imgur.com/IZttsy2.png "gl-table-default")
 
 Example
@@ -135,7 +122,12 @@ Example
               <th>1</th>
             </tr>
           </thead>
-          <tbody>
+          <tfoot class="table-foot">
+            <tr>
+              <td></td>
+            </tr>
+          </tfoot>
+          <tbody class="table-body">
             <tr>
              <td>1</td>
            </tr>
@@ -143,10 +135,7 @@ Example
       </table>
 ```
 ### วิธีใช้งาน gl-panel
-import ไฟล์ gl-panel ในหน้าที่่ต้องการ
-```
-<style is="custom-style" include="gl-panel"></style>
-```
+
 ![alt text](http://i.imgur.com/JN7xA5R.png "gl-panel")
 
 Example
