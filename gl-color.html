@@ -6,6 +6,7 @@
         --gl-info-color: #5bc0de;
         --gl-warning-color: #f0ad4e;
         --gl-danger-color: #d9534f;
+        --gl-disabled-color: #D5D8DC;
 
         --gl-gray-darker-color:#222;
         --gl-gray-dark-color:#333;
@@ -99,6 +100,16 @@
         min-height:var(--gl-btn-min-hight);
         min-width:var(--gl-btn-min-width);
         margin: var(--gl-btn-margin);
+      }
+      .gl-btn-disabled{
+        background-color: var(--gl-disabled-color);
+        color: var(--gl-white-color);
+        min-height:var(--gl-btn-min-hight);
+        min-width:var(--gl-btn-min-width);
+        margin: var(--gl-btn-margin);
+        --paper-button-disabled:{
+           cursor:not-allowed;
+        }
       }
        /*end btn*/
       .gl-icon-size {
