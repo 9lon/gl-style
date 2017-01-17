@@ -1,7 +1,7 @@
 {
   "name": "gl-styles",
   "description": "gl-style for web components",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "main": "gl-color.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0"

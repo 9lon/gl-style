@@ -63,6 +63,7 @@ import ไฟล์ gl-styles ในหน้าที่่ต้องกา�
 ## Btn style and icon size
 ![alt text](http://i.imgur.com/CKClG9G.png "gl-color")
 ```
+        
         .gl-btn-primary
         .gl-btn-success
         .gl-btn-info
