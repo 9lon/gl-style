@@ -13,16 +13,16 @@
     <link rel="import" href="../../paper-toast/paper-toast.html">
     <link rel="import" href="../../paper-spinner/paper-spinner.html">
     <link rel="import" href="../../iron-icons/iron-icons.html">
-    <link rel="import" href="../../gl-font/gl-rsu-font.html">
-      <link rel="import" href="../gl-styles.html">
-    <!--<link rel="import" href="../gl-color.html">
+    <!--<link rel="import" href="../../gl-font/gl-rsu-font.html">-->
+    <link rel="import" href="../gl-styles.html">
+    <!--<link rel="import" href="../gl-color.html">-->
     <link rel="import" href="../gl-size.html">
-    <link rel="import" href="../gl-table.html">
-    <link rel="import" href="../gl-panel.html">-->
+    <!--<link rel="import" href="../gl-table.html">-->
+    <!--<link rel="import" href="../gl-panel.html">-->
     <link rel="import" href="../gl-toast.html">
     
     
-    <style is="custom-style" include="demo-pages-shared-styles gl-toast">
+    <style is="custom-style" include="demo-pages-shared-styles gl-styles gl-toast gl-size">
             .title {
             font-size: var(--font-size-large);
         }
@@ -55,6 +55,7 @@
         .btn {
             background-color: var(--gl-primary-color);
         }
+        
     </style>
 </head>
 
@@ -87,7 +88,8 @@
             <p class="gl-bg-danger">gl-bg-danger</p>
 
             <br>Button : Btn style and Icon size.<br><br><br>
-
+            <paper-button raised class="gl-btn-defalse">
+                <iron-icon icon="favorite" class="gl-icon-size"></iron-icon>defalse</paper-button><br><br>
             <paper-button raised class="gl-btn-primary">
                 <iron-icon icon="favorite" class="gl-icon-size"></iron-icon>primary</paper-button><br><br>
             <paper-button raised class="gl-btn-success">
@@ -97,7 +99,9 @@
             <paper-button raised class="gl-btn-warning">
                 <iron-icon icon="favorite" class="gl-icon-size"></iron-icon>warning</paper-button><br><br>
             <paper-button raised class="gl-btn-danger">
-                <iron-icon icon="favorite" class="gl-icon-size"></iron-icon>danger</paper-button>
+                <iron-icon icon="favorite" class="gl-icon-size"></iron-icon>danger</paper-button><br><br>
+            <paper-button raised class="gl-btn-primary" disabled>
+                <iron-icon icon="favorite" class="gl-icon-size"></iron-icon>primary</paper-button>
             
              <br><br><br>Table : Table style.<br><br><br>
              class : gl-table-default

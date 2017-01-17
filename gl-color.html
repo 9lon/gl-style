@@ -31,74 +31,48 @@
         --gl-icon-width:20px;
       }
       /*bg*/
-      .gl-bg-primary {
-        background-color: var(--gl-primary-color);
-        color: var(--gl-white-color);
-        padding: var(--gl-padding);
-      }
-      .gl-bg-success {
-        background-color: var(--gl-success-color);
-        color: var(--gl-white-color);
-        padding: var(--gl-padding);
-      }
-      .gl-bg-info {
-        background-color: var(--gl-info-color);
-        color: var(--gl-white-color);
-        padding: var(--gl-padding);
-      }
-      .gl-bg-warning {
-        background-color: var(--gl-warning-color);
-        color: var(--gl-white-color);
-        padding: var(--gl-padding);
-      }
+      .gl-bg-primary,.gl-bg-success,
+      .gl-bg-info,.gl-bg-warning,
       .gl-bg-danger {
-        background-color: var(--gl-danger-color);
         color: var(--gl-white-color);
         padding: var(--gl-padding);
+      }
+      /* coror and btn*/
+      .gl-bg-primary,.gl-btn-primary {
+        background-color: var(--gl-primary-color);
+      }
+      .gl-bg-success,.gl-btn-success {
+        background-color: var(--gl-success-color);
+      }
+      .gl-bg-info,.gl-btn-info {
+        background-color: var(--gl-info-color);
+      }
+      .gl-bg-warning,.gl-btn-warning {
+        background-color: var(--gl-warning-color);
+      }
+      .gl-bg-danger,.gl-btn-danger {
+        background-color: var(--gl-danger-color);
       }
        /*end bg */
       /*btn*/
+      .gl-btn-defalse,.gl-btn-primary,
+      .gl-btn-success,.gl-btn-info,
+      .gl-btn-warning,.gl-btn-danger {
+        color: var(--gl-white-color);
+        min-height:var(--gl-btn-min-hight);
+        min-width:var(--gl-btn-min-width);
+        margin: var(--gl-btn-margin);
+      }
       .gl-btn-defalse {
         background-color: var(--gl-white-color);
         color: black;
-        min-height:var(--gl-btn-min-hight);
-        min-width:var(--gl-btn-min-width);
-        margin: var(--gl-btn-margin);
       }
-       .gl-btn-primary {
-        background-color: var(--gl-primary-color);
-        color: var(--gl-white-color);
-        min-height:var(--gl-btn-min-hight);
-        min-width:var(--gl-btn-min-width);
-        margin: var(--gl-btn-margin);
-      }
-      .gl-btn-success {
-        background-color: var(--gl-success-color);
-        color: var(--gl-white-color);
-        min-height:var(--gl-btn-min-hight);
-        min-width:var(--gl-btn-min-width);
-        margin: var(--gl-btn-margin);
-      }
-      .gl-btn-info {
-        background-color: var(--gl-info-color);
-        color: var(--gl-white-color);
-        min-height:var(--gl-btn-min-hight);
-        min-width:var(--gl-btn-min-width);
-        margin: var(--gl-btn-margin);
-      }
-      .gl-btn-warning {
-        background-color: var(--gl-warning-color);
-        color: var(--gl-white-color);
-        min-height:var(--gl-btn-min-hight);
-        min-width:var(--gl-btn-min-width);
-        margin: var(--gl-btn-margin);
-      }
-      .gl-btn-danger {
-        background-color: var(--gl-danger-color);
-        color: var(--gl-white-color);
-        min-height:var(--gl-btn-min-hight);
-        min-width:var(--gl-btn-min-width);
-        margin: var(--gl-btn-margin);
+      /*btn disabled*/
+      .gl-btn-defalse[disabled],.gl-btn-primary[disabled],
+      .gl-btn-success[disabled],.gl-btn-info[disabled],
+      .gl-btn-warning[disabled],.gl-btn-danger[disabled] {
+        background-color: #eaeaea;
+        color: #a8a8a8;
       }
        /*end btn*/
       .gl-icon-size {
