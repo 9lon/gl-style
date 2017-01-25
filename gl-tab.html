@@ -1,0 +1,93 @@
+
+<dom-module id="gl-tab">
+    <style>
+      div.container{
+          /*max-width: 96px;*/
+          /*width: 100%;*/
+          /*margin: 0 auto;*/
+      }   
+      h1 {
+          text-align: center;
+      }  
+      .tabs {
+          /*ไม่แสดงจุดหน้าข้อ*/
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      } 
+      .tabs li {
+          /*สั่งให่ li เรียงตามแนวนอน*/
+          display: inline-block;
+          padding: 15px 25px;
+          background: none;
+          /*สั่งเป็ยตัวพิพม์ใหญ่*/
+          text-transform: uppercase;
+          cursor: pointer;
+      }
+      .tabs li.current {
+          background: #e9e9e9;
+      }
+      .tab-contents {
+          background: #e9e9e9;
+          padding:20px;
+      }
+      .tab-pane {
+          display: none;
+      }
+      .tab-pane.current {
+          display: block;
+      }
+    </style>
+    <template>
+        <div class="container">
+            <h1>Tab Content Example</h1>
+            <div class="tab-example">
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="home" on-tap="_changeTab" id="current">Home</li>
+                    <li class="tab-link" data-tab="contact" on-tap="_changeTab">Contact</li>
+                    <li class="tab-link" data-tab="works" on-tap="_changeTab">Works</li>
+                </ul>
+                <div class="tab-contents">
+                    <div class="tab-pane current" id="home">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate quis lacus vel sollicitudin. In in mauris ac diam facilisis volutpat. Nullam vitae vehicula eros. Mauris nulla lacus, ornare id quam a, blandit imperdiet leo. Sed rutrum sem at dolor blandit tempus. Nullam fermentum orci rhoncus elementum finibus. Etiam semper facilisis euismod. Nunc ac purus malesuada turpis ullamcorper ultricies. Proin nisl dolor, imperdiet sed maximus id, consectetur et est. Suspendisse hendrerit lacus sit amet urna faucibus finibus. Nullam placerat lacus ut ante porttitor viverra.
+                    </div>
+                    <div class="tab-pane" id="contact">
+                        Vestibulum vel iaculis mi, sed laoreet neque. Nullam lectus mauris, rhoncus sed porttitor ac, faucibus eu orci. Donec malesuada elit pulvinar ex tempus dictum. Praesent pharetra convallis justo sit amet blandit. Sed lacinia leo ac arcu commodo maximus.
+                    </div>
+                    <div class="tab-pane" id="works">
+                        Etiam facilisis eleifend ante sed congue. Aliquam erat volutpat. Pellentesque auctor, arcu quis dapibus eleifend, nulla ex elementum nisl, vel tempor orci urna in metus. Nunc lectus velit, convallis vestibulum erat non, aliquet vehicula lectus. Donec et pulvinar ligula, a ultricies libero. Nulla vitae libero nunc. Etiam sed pellentesque enim, ut pulvinar lectus. Nam vel dui ac mauris finibus porttitor at eget enim.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <script>
+        Polymer({
+            is: 'gl-tab',
+             listeners: {
+                'current.tap': 'test',
+                // 'special.tap': 'specialTap'
+            },
+            test:function(){
+                console.log('111');
+            },
+            _changeTab:function(e){
+                let target = e.currentTarget;
+                let root = Polymer.dom(this.root);
+                // target.classList.remove("current");
+                //ลบคราส
+                let removeClassInTab = root.querySelectorAll('.tabs li');
+                let removeClassInContent = root.querySelectorAll('.tab-pane');
+                removeClassInTab.map((el)=>{
+                    el.classList.remove("current");
+                });
+                removeClassInContent.map((el)=>{
+                    el.classList.remove("current");
+                });
+                //เพิ่มคลาส
+                target.className += " current";
+                this.$$('#' + target.getAttribute("data-tab")).className += " current";
+            }
+        });
+    </script>
+</dom-module>
